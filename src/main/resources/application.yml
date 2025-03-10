@@ -1,0 +1,8 @@
+spring:
+    application:
+        name: spring-boot-with-mongodb-in-action
+    data:
+        mongodb:
+            host: localhost
+            port: 27017
+            database: mongo
