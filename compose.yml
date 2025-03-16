@@ -11,3 +11,22 @@ services:
             - "27017:27017"
         volumes:
             - ./volumes/mongo_data:/data/db
+        networks:
+            - ${GLOBAL_NETWORK:-service}
+
+    spring-boot-mondo:
+        image: anatolydudko/spring-boot-with-mongodb-in-action:3.4.3
+        container_name: spring-boot-mondo
+        ports:
+            - "8080:8080"
+        environment:
+            SPRING_DATA_MONGODB_HOST: mongo
+        depends_on:
+            mongo:
+                condition: service_started
+        networks:
+            - ${GLOBAL_NETWORK:-service}
+
+networks:
+    service:
+        driver: bridge

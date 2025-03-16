@@ -1,25 +1,20 @@
 package com.dudko.example.model;
 
-import lombok.AllArgsConstructor;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.mongodb.core.mapping.Field;
+import lombok.Builder;
 
 import java.util.UUID;
 
-
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Document("items")
+@Builder
 public class Item {
 
-    @Id
-    UUID id;
+    @NotBlank
+    private UUID id;
 
-    @Field
-    String content;
+    @Valid
+    private Content content;
 
 }

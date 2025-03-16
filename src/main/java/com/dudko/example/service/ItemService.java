@@ -4,14 +4,13 @@ import com.dudko.example.model.Item;
 
 import java.util.List;
 
-
 public interface ItemService {
 
     Item save(Item item);
 
-    Item findById(String id);
+    Item getById(String id);
 
-    List<Item> findAll();
+    List<Item> getAll();
 
     Item update(Item item);
 

@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"content\": \"Some test 1\"\n}",
+					"raw": "{\n    \"contentDto\": \"Some test 10\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -33,18 +33,18 @@
 			"response": []
 		},
 		{
-			"name": "get_items_by_content",
+			"name": "get_items_by_id",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{host}}/items/ec8c9d77-56db-495b-87ec-d5124bda1ab3",
+					"raw": "{{host}}/items/d8210a87-e3ee-4a8e-be71-27e6d0448f85",
 					"host": [
 						"{{host}}"
 					],
 					"path": [
 						"items",
-						"ec8c9d77-56db-495b-87ec-d5124bda1ab3"
+						"d8210a87-e3ee-4a8e-be71-27e6d0448f85"
 					]
 				}
 			},
@@ -73,13 +73,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{host}}/items/ec8c9d77-56db-495b-87ec-d5124bda1ab3",
+					"raw": "{{host}}/items/d8210a87-e3ee-4a8e-be71-27e6d0448f85",
 					"host": [
 						"{{host}}"
 					],
 					"path": [
 						"items",
-						"ec8c9d77-56db-495b-87ec-d5124bda1ab3"
+						"d8210a87-e3ee-4a8e-be71-27e6d0448f85"
 					]
 				}
 			},
@@ -92,7 +92,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n        \"id\": \"ec8c9d77-56db-495b-87ec-d5124bda1ab3\",\n        \"content\": \"Some test 2\"\n    }",
+					"raw": "{\n        \"id\": \"9d998f19-f5f4-4b8e-bbc9-c7021b388b8f\",\n        \"contentDto\": {\n            \"content\": \"Some test 91\"\n        }\n    }",
 					"options": {
 						"raw": {
 							"language": "json"
