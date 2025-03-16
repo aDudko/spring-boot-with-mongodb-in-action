@@ -13,7 +13,7 @@ The application is designed as an internal microservice with no public access to
 - `Java` - version `21`
 - `Maven` - for building the application
 - `Spring Boot` - version `3.4.3`
-- `Spring Cloud` - version 2023.0.3
+- `Spring Cloud` - version `2023.0.3`
 - `Spring Boot Actuator` - it's for real-world applications
 - `Spring Boot Maven Plugin` - for create Docker-Image
 - `Docker` - containerization
